@@ -1,0 +1,140 @@
+
+/* Main records section */
+.records-container {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.07);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.records-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.records-heading h3 {
+    color: #203864;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.records-heading p {
+    color: #777777;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Search form */
+.records-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+    max-width: 650px;
+}
+
+.records-search .form-control {
+    min-width: 0;
+    border: 1px solid #d8deea;
+    border-radius: 7px;
+    padding: 10px 13px;
+}
+
+.records-search .form-control:focus {
+    border-color: #4776d0;
+    box-shadow: 0 0 0 3px rgba(71, 118, 208, 0.12);
+}
+
+.records-search .btn {
+    border-radius: 7px;
+    white-space: nowrap;
+}
+
+/* Table wrapper and table */
+.records-table {
+    margin-bottom: 0;
+    border-color: #e1e6ef;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.records-table thead th {
+    background: #eaf1ff;
+    color: #203864;
+    font-weight: 700;
+    padding: 14px 12px;
+    white-space: nowrap;
+    border-bottom: 2px solid #d5e1f7;
+}
+
+.records-table tbody td {
+    padding: 12px;
+    color: #394150;
+}
+
+.records-table tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+.records-table tbody tr:hover {
+    background-color: #edf4ff;
+}
+
+/* Edit and Delete buttons */
+.action-buttons {
+    white-space: nowrap;
+}
+
+.action-buttons .btn {
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.delete-form {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Empty search results */
+.no-records {
+    background: #f3f7ff;
+    color: #455675;
+    padding: 20px;
+    border: 1px solid #dce7fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .records-container {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .records-heading h3 {
+        font-size: 21px;
+    }
+
+    .records-search {
+        flex-wrap: wrap;
+    }
+
+    .records-search .form-control {
+        flex-basis: 100%;
+    }
+
+    .records-table {
+        font-size: 12px;
+    }
+
+    .records-table thead th,
+    .records-table tbody td {
+        padding: 9px;
+    }
+}
