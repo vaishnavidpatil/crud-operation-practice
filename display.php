@@ -49,7 +49,7 @@ if ($search !== '') {
     <?php if ($result->num_rows > 0): ?>
 
         <div class="table-responsive">
-<table class="table table-bordered table-hover records-table">
+<table class="table table-bordered table-striped table-hover records-table">
                 <thead>
                     <tr>
                         <th>Sr.No</th>
